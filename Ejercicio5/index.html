@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.5.0.min.js"></script> <!-- Aca se esta cargando JQuery. -->
+    <title></title>
+    <script>
+      $(function() {
+        $('button').click(function() {
+           var texto = $('p');
+           var porte = texto.css('fontSize');
+           var numero = parseFloat(porte,10);
+           var unidad = porte.slice(-2);
+           if (this.id == 'mas') {
+             numero = numero * 1.2;
+           }
+           else if (this.id = 'menos'){
+               numero = numero / 1.2;
+             }
+           texto.css("fontSize", numero + unidad)
+        });
+      });
+    </script>
+    <style>
+      p {
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+<button type="button" name="button" id="mas">Mas Grande</button>
+<button type="button" name="button" id="menos">Mas pequeño</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam hic,cum provident tempore laudantium.</p>
+  </body>
+</html>
