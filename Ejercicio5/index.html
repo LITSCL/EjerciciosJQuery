@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script type="text/javascript" src="jquery-3.5.0.min.js"></script> <!-- Aca se esta cargando JQuery. -->
-    <title></title>
     <script>
         $(function() {
-            $('button').click(function() {
+            $("button").click(function() {
                 var texto = $("p");
                 var porte = texto.css("fontSize");
                 var numero = parseFloat(porte,10);
@@ -22,9 +23,9 @@
         });
     </script>
     <style>
-      p {
-        font-size: 1em;
-      }
+        p {
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>

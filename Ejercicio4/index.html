@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script type="text/javascript" src="jquery-3.5.0.min.js"></script> <!-- Aca se esta cargando JQuery. -->
-    <title></title>
     <style>
         #caja {
             background: #205e10;
@@ -13,15 +14,15 @@
         }
     </style>
     <script>
-        $(function(){
+        $(function() {
             $("#boton").click(function() {
                 var caja = $("#caja");
-                caja.animate({height:'300px',opacity:'0.2'}, "fast");
-                caja.animate({'margin-top':'200px',opacity:'0.8'}, "fast");
-                caja.animate({height:'100px',opacity:'1'}, "fast");
-                caja.animate({'margin-left':'200px',opacity:'0.8'}, "fast");
-                caja.animate({'margin-top':'0px',opacity:'0.8'}, "fast");
-                caja.animate({'margin-left':'0px',opacity:'1'}, "fast");
+                caja.animate({"height": "300px", opacity: "0.2"}, "fast");
+                caja.animate({"margin-top": "200px", opacity: "0.8"}, "fast");
+                caja.animate({"height": "100px", opacity: "1"}, "fast");
+                caja.animate({"margin-left": "200px", opacity: "0.8"}, "fast");
+                caja.animate({"margin-top": "0px", opacity: "0.8"}, "fast");
+                caja.animate({"margin-left": "0px", opacity: "1"}, "fast");
             });
         });
     </script>
