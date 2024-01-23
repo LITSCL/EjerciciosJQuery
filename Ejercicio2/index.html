@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="jquery-3.5.0.min.js"></script> <!-- Aca se esta cargando JQuery. -->
     <title></title>
     <style>
-      div {
-        width: 150px;
-        height: 50px;
-        border: 2px solid black;
-      }
+        div {
+            width: 150px;
+            height: 50px;
+            border: 2px solid black;
+        }
     </style>
     <script>
-      $(function() {
-        $("button").click(function() {
-          var eleccion = $("input:radio:checked").val();
-          $("div").text(eleccion);
+        $(function() {
+            $("button").click(function() {
+                var eleccion = $("input:radio:checked").val();
+                $("div").text(eleccion);
+            })
         });
-      });
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <h3>Elija una opción</h3>
     <form action="">
-      <input type="radio" name="color" value="Azul">Azul<br/>
-      <input type="radio" name="color" value="Verde">Verde<br/>
-      <input type="radio" name="color" value="Rojo">Rojo<br/>
-      <input type="radio" name="color" value="Naranjo">Naranjo<br/>
-      <button type="button" name="button">Mostrar Selección</button>
+        <input type="radio" name="color" value="Azul">Azul<br/>
+        <input type="radio" name="color" value="Verde">Verde<br/>
+        <input type="radio" name="color" value="Rojo">Rojo<br/>
+        <input type="radio" name="color" value="Naranjo">Naranjo<br/>
+        <button type="button" name="button">Mostrar Selección</button>
     </form>
     <h4>El elegido es:</h4>
     <div></div>
-  </body>
+</body>
 </html>

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="jquery-3.5.0.min.js"></script> <!-- Aca se esta cargando JQuery. -->
     <title></title>
-  </head>
+</head>
     <form action="">
-      Caja 1<input type="text" name="texto1" disabled><br/>
-      Caja 2<input type="text" name="texto2" disabled><br/>
-      Caja 3<input type="text" name="texto3" disabled><br/>
-      <button type="button" name="button" id="activar">Activar</button>
-      <button type="button" name="button" id="desactivar">Desactivar</button>
+        Caja 1<input type="text" name="texto1" disabled><br/>
+        Caja 2<input type="text" name="texto2" disabled><br/>
+        Caja 3<input type="text" name="texto3" disabled><br/>
+        <button type="button" name="button" id="activar">Activar</button>
+        <button type="button" name="button" id="desactivar">Desactivar</button>
     </form>
     <script>
-      $(function() {
-        $("#activar").click(function() {
-          $("input").prop("disabled",false);
+        $(function() {
+            $("#activar").click(function() {
+                $("input").prop("disabled",false);
+            });
+            $("#desactivar").click(function() {
+                $("input").prop("disabled",true)
+            });
         });
-        $("#desactivar").click(function(){
-          $("input").prop("disabled",true)
-        });
-      });
     </script>
-  </body>
+</body>
 </html>
